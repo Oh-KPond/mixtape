@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: f8e1b81f8da82ea9eb88c4939a3a6801f97e5ac1
+  branch: master
+  specs:
+    faker (1.8.7)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -104,6 +112,11 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
+    minitest-skip (0.0.1)
+      minitest (~> 5.0)
+    minitest-spec-rails (5.4.0)
+      minitest (~> 5.0)
+      rails (>= 4.1)
     msgpack (1.2.4)
     nio4r (2.3.0)
     nokogiri (1.8.2)
@@ -185,12 +198,15 @@ DEPENDENCIES
   binding_of_caller
   bootsnap (>= 1.1.0)
   byebug
+  faker!
   foundation-rails
   jquery-rails
   jquery-turbolinks
   listen (>= 3.0.5, < 3.2)
   minitest-rails
   minitest-reporters
+  minitest-skip
+  minitest-spec-rails
   normalize-rails
   pg (>= 0.18, < 2.0)
   pry-rails
